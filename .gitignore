@@ -3,7 +3,4 @@ venv
 staticfiles
 .env
 db.sqlite3
-.idea/dataSources.local.xml
-.idea/dataSources.xml
-.idea/dataSources/
-.idea/inspectionProfiles/
+.idea
