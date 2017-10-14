@@ -5,8 +5,8 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Helo   guis this is website pls vistit also kostya.instagram.ru')
-    # return render(request, 'index.html')
+    # return HttpResponse('Helo   guis this is website pls vistit also kostya.instagram.ru')
+    return render(request, 'index.html')
 
 
 def db(request):
