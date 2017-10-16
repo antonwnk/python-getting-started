@@ -28,7 +28,7 @@ class Warehouse(models.Model):
         return self.address
 
 
-class Supplier:
+class Supplier(models.Model):
     name = models.CharField(primary_key=True, max_length=20)
 
     def __str__(self):
@@ -38,10 +38,13 @@ class Supplier:
         return self.name
 
 
-class Sale:
+class Sale(models.Model):
+    # def current_time(self):
+    #     return datetime.datetime.now().time()
+
     saleId = models.AutoField(primary_key=True)
-    date = models.DateField(default=datetime.datetime.now().date)
-    time = models.TimeField(default=datetime.datetime.now().time)
+    date = models.DateField(default=datetime.date.today)
+    time = models.TimeField(auto_now_add=True)
 
     def __str__(self):
         return self.date.__str__() + ' ' + self.time.__str__()
@@ -50,7 +53,7 @@ class Sale:
         return self.date.__str__() + ' ' + self.time.__str__()
 
 
-class Customer:
+class Customer(models.Model):
     customerId = models.AutoField(primary_key=True)
     address = models.TextField(max_length=100)
 
