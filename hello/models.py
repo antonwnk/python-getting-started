@@ -62,3 +62,14 @@ class Customer(models.Model):
 
     def __unicode__(self):
         return self.customerId
+
+class Stock(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    warehouse = models.ForeignKey(Warehouse, on_delete=models.CASCADE)
+    quantity = models.SmallIntegerField(default=48)
+
+class Supplier_Contact(models.Model):
+    supplier = models.OneToOneField(Supplier, on_delete=models.CASCADE)
+    phone_no = models.PositiveIntegerField(null=False, blank=False)
+    address = models.CharField(max_length=50, null=False, blank=False)
+    email = models.CharField(max_length=25, null=False, blank=False)
