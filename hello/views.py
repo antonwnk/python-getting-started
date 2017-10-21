@@ -14,3 +14,6 @@ def db(request):
 
     return render(request, 'db.html', {'models': [prod]})
 
+
+def table(request, table_name):
+    return HttpResponse('Helo ' + table_name)

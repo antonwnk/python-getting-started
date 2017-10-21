@@ -3,7 +3,7 @@ venv
 staticfiles
 .env
 db.sqlite3
-.idea
+.idea/
 gettingstarted/__pycache__/
 hello/__pycache__/
 hello/migrations/__pycache__/

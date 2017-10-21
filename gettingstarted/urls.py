@@ -13,7 +13,10 @@ import hello.views
 
 urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
-    url(r'^db', hello.views.db, name='db'),
+    url(r'^db/?$', hello.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico', permanent=True)),
+
+    # table urls
+    url(r'^table-(?P<table_name>\w+)/?$', hello.views.table),
+
 ]
