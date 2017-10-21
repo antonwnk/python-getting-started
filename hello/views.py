@@ -10,9 +10,7 @@ def index(request):
 
 def db(request):
 
-    prod = hello.models.Product()
-
-    return render(request, 'db.html', {'models': [prod]})
+    return render(request, 'db.html')
 
 
 def table(request, table_name):
