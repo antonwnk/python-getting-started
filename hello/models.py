@@ -136,7 +136,7 @@ class Sale(models.Model):
 class Order_Items(models.Model):
     sale = models.ForeignKey(Sale)
     product = models.ForeignKey(Product)
-    quantity = models.SmallIntegerField(default=1)
+    quantity = models.IntegerField(default=1)
 
     def __str__(self):
         return 'Sale{} - product{} x {}'.format(self.sale, self.product, self.quantity)
