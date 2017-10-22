@@ -6,3 +6,4 @@ test-data/customer.csv Customer
 test-data/stock.csv Stock
 test-data/supplierstock.csv Supplier_Stock
 test-data/sale.csv Sale
+test-data/orderitems.csv
