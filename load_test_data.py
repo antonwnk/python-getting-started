@@ -1,8 +1,8 @@
 import importlib
 import csv
 
-def run():
 
+def run():
     def clean(string):
         newString = ''
         for c in string:
@@ -48,9 +48,9 @@ def run():
                         return tuple
 
                     for data_row in reader:
-
                         instance = constructor(**kwargs(data_row))
                         getattr(instance, 'save')()
             except Exception:
                 print(file)
                 print(entry)
+                raise Exception
