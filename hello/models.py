@@ -32,7 +32,7 @@ class Product(models.Model):
 
 class Warehouse(models.Model):
     warehouseId = models.AutoField(primary_key=True)
-    address = models.TextField(max_length=100)
+    address = models.TextField(max_length=120)
 
     def __str__(self):
         return self.address
@@ -43,7 +43,7 @@ class Warehouse(models.Model):
 
 class Supplier(models.Model):
     supplierId = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=500)
 
     def __str__(self):
         return self.name
@@ -55,8 +55,8 @@ class Supplier(models.Model):
 class Supplier_Contact(models.Model):
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
     phone_no = models.CharField(max_length=12, blank=False)
-    address = models.CharField(max_length=50, blank=False)
-    email = models.CharField(max_length=25, blank=False)
+    address = models.CharField(max_length=500, blank=False)
+    email = models.EmailField()
 
     def __str__(self):
         return 'Details for: ' + self.supplier.name
@@ -67,10 +67,10 @@ class Supplier_Contact(models.Model):
 
 class Customer(models.Model):
     customerId = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=500)
     email = models.EmailField()
     hashed_password = models.CharField(max_length=32)
-    address = models.TextField(max_length=100)
+    address = models.TextField(max_length=1000)
     history = models.ManyToManyField(Product, db_table='hello_customer_history')
 
     def __str__(self):
