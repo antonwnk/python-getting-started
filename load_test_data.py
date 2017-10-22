@@ -18,35 +18,39 @@ def run():
 
             constructor = getattr(hello_models, model_name)
 
-            with open(file) as csvfile:
-                reader = csv.reader(csvfile, delimiter=';')
-                header = next(reader)
-                header = [clean(entry) for entry in header]
+            try:
+                with open(file) as csvfile:
+                    reader = csv.reader(csvfile, delimiter=';')
+                    header = next(reader)
+                    header = [clean(entry) for entry in header]
 
-                def kwargs(values):
-                    tuple = {}
+                    def kwargs(values):
+                        tuple = {}
 
-                    assert len(values) == len(header), [header, file]
+                        assert len(values) == len(header), [header, file]
 
-                    for attribute_name, attribute_value in zip(header, values):
+                        for attribute_name, attribute_value in zip(header, values):
 
-                        if attribute_name.startswith('ref'):
+                            if attribute_name.startswith('ref'):
 
-                            assert len(attribute_name.split(' ')) == 3, [attribute_name, header, file]
+                                assert len(attribute_name.split(' ')) == 3, [attribute_name, header, file]
 
-                            attrName, refName = attribute_name.split(' ')[1:]
+                                attrName, refName = attribute_name.split(' ')[1:]
 
-                            refModelClass = getattr(hello_models, refName)
-                            refGetter = getattr(getattr(refModelClass, 'objects'), 'get')
+                                refModelClass = getattr(hello_models, refName)
+                                refGetter = getattr(getattr(refModelClass, 'objects'), 'get')
 
-                            tuple[attrName] = refGetter(pk=attribute_value)
+                                tuple[attrName] = refGetter(pk=attribute_value)
 
-                        else:
-                            tuple[attribute_name] = attribute_value
+                            else:
+                                tuple[attribute_name] = attribute_value
 
-                    return tuple
+                        return tuple
 
-                for data_row in reader:
+                    for data_row in reader:
 
-                    instance = constructor(**kwargs(data_row))
-                    getattr(instance, 'save')()
+                        instance = constructor(**kwargs(data_row))
+                        getattr(instance, 'save')()
+            except Exception:
+                print(file)
+                print(entry)
