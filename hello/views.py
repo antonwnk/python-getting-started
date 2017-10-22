@@ -12,8 +12,9 @@ def index(request):
 
 
 def db(request):
-    model_classes = [item for item in models.__dict__.items() if item[0][0].isupper()]
-    table_names = [item[0].replace('_', ' ') for item in model_classes]
+    # model_classes = [item for item in models.__dict__.items() if item[0][0].isupper()]
+    # table_names = [item[0].replace('_', ' ') for item in model_classes]
+    table_names = ['Product']
 
 
     if 'table' not in request.GET:
