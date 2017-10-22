@@ -1,6 +1,9 @@
 from django.shortcuts import render
-import hello.models
 from django.http import HttpResponse
+
+import hello.models as models
+import hello.tables as tables
+
 
 
 # Create your views here.
@@ -9,9 +12,19 @@ def index(request):
 
 
 def db(request):
+    model_classes = [item for item in models.__dict__.items() if item[0][0].isupper()]
+    table_names = [item[0].replace('_', ' ') for item in model_classes]
 
-    return render(request, 'db.html')
 
+    if 'table' not in request.GET:
+        return render(request, 'db.html', {'table_names': table_names})
+    else:
+        table_name = request.GET['table']
+        Model = models.__dict__[table_name]
+        Table = tables.__dict__[table_name + 'Table']
 
-def table(request, table_name):
-    return HttpResponse('Helo ' + table_name)
+        if not Model:
+            return HttpResponse('<h1> nice try hacker</h1>')
+
+        table = Table(Model.objects.all())
+        return render(request, 'db-table.html', {'table': table, 'table_names': table_names})

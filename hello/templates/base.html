@@ -55,7 +55,7 @@
       <li class="{% if current_path == '/' %} active {% endif %}">
         <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
       </li>
-      <li class="{% if current_path == '/db' %} active {% endif %}">
+      <li class="{% if '/db' in current_path %} active {% endif %}">
         <a href="/db"><span class="glyphicon glyphicon-hdd"></span> Go to the DB-View</a>
       </li>
       <li>

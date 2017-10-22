@@ -1,0 +1,801 @@
+[{
+		"model": "hello.product",
+		"pk": 1,
+		"fields": {
+			"category": "CP",
+			"price": "399.00",
+			"full_name": "HP Pavilion Flagship Desktop Computer - Intel Quad-Core Pentium J2900 up to 2.67GHz, 8GB RAM, 1TB HDD, DVD Burner, WLAN, Bluetooth, Win 10",
+			"description": "Key Features and Benefits:\nIntel Pentium J2900 quad-core processor\n2.41GHz, 2MB L2 Cache\n8GB DDR3L SDRAM system memory (expandable to 8GB) \nGives you the power to handle most power-hungry applications and tons of multimedia work\n1TB SATA hard drive\nStore 666,000 photos, 285,000 songs or 526 hours of HD video and more\nUltra-Slim Tray SuperMulti DVD Burner\n10/100Base-T Ethernet, 802.11b/g/n Wireless LAN\nIntel HD Graphics with up to 1792MB total graphics memory\nAdditional Features: \n7-in-1 media card reader\n1 x USB 3.0 port, 4 x USB 2.0 ports, 1 x VGA port, 1 x DVI-I port, 1 x RJ-45 port, 1 x headphone/microphone jack\n1 x PCI Express (x1) mini socket slot\n2 x internal 3.5\" bays\n10.74 lbs, 19.89\" x 7.59\" x 15.07\"\nSoftware: \nGenuine Microsoft Windows 10 Home\nWhat's In The Box: \nPower cord\nHP USB keyboard\nHP optical mouse"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 2,
+		"fields": {
+			"category": "CP",
+			"price": "1869.00",
+			"full_name": "Apple 27\" iMac, Retina 5K Display, 3.5GHz Intel Core i5 Quad Core, 8GB RAM, 1TB Fusion Drive, Silver, MNEA2LL/A",
+			"description": "Size:27 Inch, 3.4GHz Intel Core i5, 8GB RAM, 1TB Fusion Drive\nA desktop experience that draws you in and keeps you there. This is the idea behind today's iMac. And now that idea is more powerful than ever. The new iMac is packed with all-new processors, the latest graphics technologies, innovative storage, and higher-bandwidth connectivity. And it all comes to life on the brightest and most colorful Retina display iMac has ever seen. So you get an even more immersive experience - and a scintillating new way to take it all in."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 3,
+		"fields": {
+			"category": "CP",
+			"price": "1098.00",
+			"full_name": "ASUS ROG STRIX GL503VD 15\u00ef\u00bf\u00bd Gaming Laptop, GTX 1050 4GB, Intel Core i7 2.8 GHz, 16GB DDR4, 1TB FireCuda SSHD, RGB Keyboard",
+			"description": "Capacity:15 inch | 1TB FireCuda SSHD\nASUS ROG STRIX GL503VD 15\" Gaming Laptop; GTX 1050 4GB; Intel Core i7-7700HQ quad-core 2.8GHz (Turbo to 3.8GHz); GeForce GTX 1050 4GB graphics; 16GB DDR4; 1TB Hybrid HDD; RGB Keyboard; Dual Band 802.11AC WiFi; Bluetooth 4.1.\n\n"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 4,
+		"fields": {
+			"category": "CP",
+			"price": "1799.00",
+			"full_name": "Dell XPS9560-7001SLV-PUS 15.6\" Ultra Thin and Light Laptop with 4K touch screen display, 7th Gen Core i7 (up to 3.8 GHz), 16GB, 512GB SSD, Nvidia Gaming GPU GTX 1050, Aluminum Chassis",
+			"description": "CPU:Core i7  |  Capacity:16 GB RAM / 512 GB SSD  |  Style:Laptop Only\nThe world's smallest 15.6-inch laptop packs powerhouse performance and a stunning InfinityEdge display - all in our most powerful XPS laptop. With the UltraSharp 4K Ultra HD display (3840 x 2160), you can see each detail of every pixel without needing to zoom in. And with 6 million more pixels than Full HD and 3 million more than the MacBook Pro, you can edit images with pinpoint accuracy without worrying about blurriness or jagged lines."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 5,
+		"fields": {
+			"category": "CP",
+			"price": "669.00",
+			"full_name": "Acer Aspire AIO Touch Desktop, 23.8\" Full HD Touch, Intel Core i5-7400T, 12GB DDR4, 1TB HDD, Windows 10 Home, AZ3-715-ACKi5",
+			"description": "Acer Aspire AZ3-715-ACKi51 All-in-One Desktop PC comes with these specs: 7th Generation Intel Core i5-7400T processor 2.4GHz with Turbo Boost Technology up to 3.0GHz, Windows 10 Home, 23.8\" Full HD Widescreen LED Back-lit Touch Screen with IPS (In-Plane Switching) technology & Wide viewing angle up to 178 Degree, 12GB DDR4 Memory, Intel HD Graphics 630, 1TB 5400RPM SATA Hard Drive, 8X DVD-Writer Double-Layer Drive (DVD-RW), Digital Media Card Reader - Secure Digital Card, Built-in Full HD (1080P) Webcam, 10/100/1000 Gigabit Ethernet, 802.11ac Wi-Fi, Bluetooth 4.0 LE, Dolby-optimized surround sound system, Acer True Harmony High-Performance Sound System, 4 - USB 3.1 (Gen 1 Type A) Ports (2 rear, 2 side), 1 - USB 2.0 Port, Wireless Keyboard and Mouse, 25.3 lbs. | 11.5kg (system unit only), 1 Year Parts and Labour Limited Warranty with Toll Free Tech Support, Registration/Limited Warranty Card (DQ.B86AA.004)."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 6,
+		"fields": {
+			"category": "AP",
+			"price": "49.00",
+			"full_name": "BLACK+DECKER CHV1410L 16V Cordless Lithium Hand Vacuum",
+			"description": "BLACK + DECKER CHV1410L 16 volt Lithium Cordless Dust Buster Hand Vac Ideal for Any Quick Pick Up Ideal for Quick Pick Up The sleek CHV1410L boasts lithium technology, strong suction and fade-free power. With a translucent bag less dirt bowl, the dirt is easy to see and empty. Ever ready, the hand vac can hold a charge for up to 18 months when off the charger, and is lightweight enough to tackle quick pick ups around the home. Smart Charge Technology High efficiency Lithium ion chargers help to protect your BLACK+DECKER hand vac by automatically shutting off when the battery is charged, allowing you to conveniently store your BLACK+DECKER hand vac on the charger while maintaining long run times, year after year. About Black + Decker Since 1910, Black + Decker has been setting the standard for innovation and design of power tools, accessories, outdoor yard care equipment, home cleaning products, automotive and lighting products, hardware and other home improvement products. The inventor of the first portable electric drill with pistol grip and trigger switch, Black + Decker has evolved from a small machine shop in Baltimore, Maryland to a global manufacturing and marketing powerhouse with a broad line of quality products used in and around the home and for commercial applications. When users need to get work done, they trust Black + Decker for the products that will do the job efficiently and reliably 16V MAX Lithium Ion Dust Buster 16V MAX Lithium Ion Dust buster This hand vac provides consumers with everything they need in a hand vac, plus long battery life, year after year. The CHV1410L features great power and suction for use on everything from carpet to ceramic tile to furniture and more. Cyclonic Action Cyclonic Action The cyclonic action spins dust and debris away from the filter keeping suction strong. It delivers powerful suction where users need it most. Crevice Tool and Brush. Note: Charging instructions can be seen in Page 4 to 5 and Direction for cleaning filters and canisters can be seen in Page 5 to 7 on Installation Manual available under technical specification."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 7,
+		"fields": {
+			"category": "AP",
+			"price": "29.00",
+			"full_name": "Hamilton Beach 70740 8-Cup Food Processor, Black",
+			"description": "Hamilton Beach Food Processors rely on robust motors to chop, slice, shred, mix and puree just about anything you put in the bowl. In-bowl blade storage and dishwasher-safe parts make these food processors easy to clean and store and some models offer special conveniences like reversible slicing and shredding discs and continuous feed chutes."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 8,
+		"fields": {
+			"category": "AP",
+			"price": "149.00",
+			"full_name": "Hoover Power Scrub Deluxe Carpet Washer FH50150",
+			"description": "Help extend the life of your carpet with the Hoover Power Scrub Deluxe Carpet Cleaner. Designed to clean many carpeted and fabric surfaces in and around your home. Make cleaning a breeze with spill free tanks that are easy to access, easy to fill, empty and clean. The Power Scrub Deluxe features SpinScrub multiple brush system, a rinse option, automatic detergent mixing, a DualV Nozzle for more efficient cleaning and forced heated air for faster drying time."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 9,
+		"fields": {
+			"category": "AP",
+			"price": "195.00",
+			"full_name": "Toshiba EC042A5C-BS Convection Microwave Oven, 1.5 Cu.ft, Black Stainless Steel",
+			"description": "This Toshiba 1.5 Cubic feet 1000 watt Black Stainless Steel microwave convection oven has a spacious interior and features convection and microwave cooking. Sensor reheating lets you optimally cook or reheat nine of the most popular food items with the touch of a button. Combine microwave and convection cooking for optimal results. Choose from ten power levels up to 1000 watts and convection cooking from 170 to 425 degrees F. Program up to three favorite time and power combinations for additional one-touch convenience. The Black Stainless Steel exterior looks good in any kitchen. Stainless steel interior for easy cleaning."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 10,
+		"fields": {
+			"category": "AP",
+			"price": "115.00",
+			"full_name": "Danby Designer DAR026A1BDD Compact All Refrigerator, 2.6-Cubic Feet, Black",
+			"description": "The Danby Designer DAR026A1BDD Energy Star 2.6 Cu. Ft. Compact All Refrigerator, in black, is energy efficient refrigeration in a convenient, compact unit. Perfect for small spaces, this model makes a great addition to the student dorm room or small office. It includes the CanStor beverage dispenser, tall bottle storage and a scratch resistant work top to store accessories. With a reversible door hinge, an integrated door handle and a smooth-back design, this handy refrigerator will fit almost anywhere. Package Content: compact refrigeratormanualwarranty Operating System Batteries Included Batteries Required Number of Batteries Battery Type Language Assembly Required"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 11,
+		"fields": {
+			"category": "PH",
+			"price": "625.00",
+			"full_name": "Samsung Galaxy S8 Unlocked 64GB - EU Version (Midnight Black)",
+			"description": "E.U. limited warranty. Latest Galaxy phone with Infinity Display, Duel Pixel Camera, iris scanning and Ip68-rated water and dust resistance. The phone comes with a stunning 5.8\" Quad HD+ Super AMOLED display (2960x1440) with 570 ppi and world's first 10nm processor."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 12,
+		"fields": {
+			"category": "PH",
+			"price": "449.00",
+			"full_name": "Huawei Mate 9 with Amazon Alexa and Leica Dual Camera - 64GB Unlocked Phone - Space Gray (EU Warranty)",
+			"description": "Huawei Mate 9 co-engineered with Leica: A Step Ahead. Revolutionary speed: Now you won\u00ef\u00bf\u00bdt slow down, thanks to the new Kirin 960 processor and intelligent Machine Learning algorithm. This ground-breaking interplay between hardware and software means your Huawei Mate 9 is born fast and stays fast. Integrated with Alexa voice service. Just tap and ask Alexa, to enjoy thousands of skills on the go, such as hearing the latest news, weather and traffic reports, check sport scores, and much more. Alarm clock skills and rights-protected music services such as Spotify are not yet supported. Enhanced power: The Huawei Mate 9 offers a truly revolutionary battery life. With its large 4000mAh battery and smart power-saving technology, you can enjoy two days\u00ef\u00bf\u00bd usage. State-of-the-art HUAWEI Supercharge technology safely charges the device for a full day\u00ef\u00bf\u00bds power in 20 minutes. Breath-taking photography: The Huawei Mate 9 offers exceptional sharpness. Its second-generation Leica Dual Camera renders images in unprecedented detail for images that take you from mere photography to artistry. Ground-breaking user experience: We\u00ef\u00bf\u00bdre proud of the EMUI 5.0 and its beautiful and smart user interface. Uncompromising design from a team of dedicated experts helps make the Huawei Mate 9 a stunning experience. Global connectivity: With incredible network support and integrated dual SIM support, the Huawei Mate 9 offers outstanding performance worldwide. Experience consistent call quality and a stable Internet connection with reduced power consumption and data usage around the globe. Bold, meticulous and refined: The Huawei Mate 9 has inherited the Mate Series\u00ef\u00bf\u00bd design DNA, with a visual and sensual feel that\u00ef\u00bf\u00bds uniquely glamorous. Unique features: The Huawei Mate 9 comes with a wide range of exciting new features that are satisfyingly intuitive to use."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 13,
+		"fields": {
+			"category": "PH",
+			"price": "229.00",
+			"full_name": "Nokia 6 - 32 GB - Unlocked  - Black",
+			"description": "Nokia 6 brings leading craftsmanship in a product that is truly built to last. Bright vibrant 5.5\u00ef\u00bf\u00bd full HD IPS laminated display that makes watching videos a delight. It offers louder sound and deeper bass from the dual speakers and a smart amplifier to ensure a better entertainment experience."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 14,
+		"fields": {
+			"category": "PH",
+			"price": "359.00",
+			"full_name": "Samsung Galaxy S7 G930v 32GB Verizon Wireless CDMA 4G LTE Smartphone w/ 12MP Camera - Black Onyx",
+			"description": "The Samsung Galaxy S7 embodies the best of form and function &ndash; packing incredible performance into a beautifully sleek frame and Lightning-fast 64 bit, Octa-core processor.\n\n"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 15,
+		"fields": {
+			"category": "PH",
+			"price": "220.00",
+			"full_name": "Samsung Galaxy J7 Prime (32GB) G610F/DS - 5.5\" Dual SIM Unlocked Phone with Finger Print Sensor (Gold)",
+			"description": "5.5-inch Full HD 1080 x 1920 pixels (~401 ppi pixel density) IPS LCD Android 6.0.1 Marshmallow, Finger Print Scanner, All Metal Body 32 GB ROM, 3 GB RAM, microSD, up to 256 GB (dedicated slot) , Exynos 7870 Octa-core 1.6 GHz Cortex-A53 13 MP Main Camera f/1.9, 28mm, 8MP Front Camera 3G HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100, 4G LTE band 1(2100), 3(1800), 5(850), 7(2600), 8(900), 20(800), 38(2600), 40(2300) International model phone, will work with Most GSM SIM cards in U.S. and world Including AT&T, T-Mobile, MetroPCS, Etc. Does not have US warranty. Will NOT work with CDMA Carriers Such as Verizon, Sprint, Boost. 2G: GSM 850 / 900 / 1800 / 1900 (SIM 1 & SIM 2), This phone will not work with CDMA Networks like Verizon, Sprint, Etc. WHATS INCLUDED? 1 PHONE w/ Built in Battery 1 ADAPTER 1 USB CABLE 1 MANUAL 1 HEADSET"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 16,
+		"fields": {
+			"category": "CM",
+			"price": "449.00",
+			"full_name": "Canon EOS Rebel T6 Digital SLR Camera with 18-55mm EF-S f/3.5-5.6 IS II Lens + 58mm Wide Angle Lens + 2x Telephoto Lens + Flash + 48GB SD Memory Card + UV Filter Kit + Tripod + Full Accessory Bundle",
+			"description": "Comprising a versatile set of imaging capabilities along with support for a connected workflow, the EOS Rebel T6 from Canon is a compact, sleek DSLR featuring an 18MP APS-C CMOS sensor and a DIGIC 4+ image processor. Combined, these two technologies avail rich image quality with reduced noise, along with a native sensitivity range of ISO 100-6400 that can be further expanded to ISO 12800 to suit working in low and difficult lighting conditions. The sensor and processor also enable the ability to shoot continuously at 3 fps for photographing moving subjects, as well as recording Full HD 1080p/30 video. Benefitting shooting with the optical viewfinder, a 9-point AF system incorporates a single center cross-type AF point for increased accuracy and focusing speed, and a contrast-detection focusing system offers refined autofocus precision for shooting movies or working in live view. The rear 3.0\" 920k-dot LCD offers a bright, clear image for playback and review, and built-in Wi-Fi with NFC also offers the ability to wirelessly share imagery from your camera to a linked mobile device for instant online sharing. Included with the camera body is the EF-S 18-55mm f/3.5-5.6 IS II lens, which provides a 28.8-88mm equivalent focal length range that covers wide-angle to short telephoto perspectives.\n\nKit Includes:\n\n\u00ef\u00bf\u00bd Canon EOS Rebel T6 DSLR Camera\n\u00ef\u00bf\u00bd Canon 18-55mm Lens\n\u00ef\u00bf\u00bd High Definition Wide Angle Lens\n\u00ef\u00bf\u00bd 58mm 2x Professional Telephoto Lens\n\u00ef\u00bf\u00bd Transcend 32GB SDHC Memory Card\n\u00ef\u00bf\u00bd Transcend 16GB SDHC Memory Card\n\u00ef\u00bf\u00bd Vivitar SLR DC59 Large Gadget Bag\n\u00ef\u00bf\u00bd Quality Tripod\n\u00ef\u00bf\u00bd 3 Piece UV Filter Kit\n\u00ef\u00bf\u00bd USB Card Reader\n\u00ef\u00bf\u00bd Auto Power Slave Flash\n\u00ef\u00bf\u00bd UV Filter 58mm\n\u00ef\u00bf\u00bd RS-60 Remote Switch for Canon\n\u00ef\u00bf\u00bd Memory Card Wallet\n\u00ef\u00bf\u00bd LCD Screen Protectors\n\u00ef\u00bf\u00bd Table Top Tripod\n\u00ef\u00bf\u00bd Lens Cap Holder\n\u00ef\u00bf\u00bd Cleaning Kit\n"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 17,
+		"fields": {
+			"category": "CM",
+			"price": "299.00",
+			"full_name": "Canon PowerShot SX420 IS Digital Camera (Black) with 20MP, 42x Optical Zoom, 720p HD Video & Built-In Wi-Fi",
+			"description": "Blending a truly long-reaching zoom with apt imaging performance, the Canon PowerShot SX420 IS Digital Camera is further characterized by its versatility and ergonomic handling. The 20.0MP 1/2.3\" CCD image sensor pairs with the DIGIC 4+ image processor to enable high-resolution stills shooting and HD 720p video recording at 25 fps, while the expansive 42x optical zoom lens ranges from wide-angle to super telephoto perspectives to suit working in a variety of environments. An Intelligent IS image stabilization system benefits the lens' reach, as well as when working in difficult lighting conditions, by minimizing the appearance of camera shake for sharper imagery. For composing imagery or reviewing your photos and movies, a rear 3.0\" 230k-dot LCD is available and built-in Wi-Fi with NFC further permits wireless sharing of imagery directly to your smartphone or tablet."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 18,
+		"fields": {
+			"category": "CM",
+			"price": "37.00",
+			"full_name": "Bonna 21 mega pixels HD Digital Camera - Digital video camera - Students cameras - Students Camcorder - Handheld Sized Digital Camcorder Indoor Outdoor for Adult /Seniors / Kids (silver)",
+			"description": ".7\" TFT LCD display show you vivid video,550mAh Lithium Ion (Li-Ion) rechargeable battery can support camera works more than 60 minutes We offer 2 pcs batteries by free.\n21 mega pixels resolution for good capture, HD 720P resolution for recording, create your HD masterpiece! Support External-Memory MAX 64G SD card. ( Not included )\nAnti-shake, Face Detect, Smile Capture, Continue Shot, Self Timer, 8X Digital Zoom, PhoTags Express Software for Photo Editing, Printing, and Sharing with E-mails, etc.\nThe applicable uses for this Digital Camera: digital still images, Web Cam, Play Back, Video record, voice reord etc.In the box\n\n1) 1 piece digital camera\n2) 2 pieces 550 mAh rechargeable lithium batteries\n3) 1 piece camera pouch\n4) 1 piece user manual\n5) 1 piece CD disk\n6) 1 piece Mini 5PIN USB cable\n7) 1 piece hang rope\n8)1 piece adaptor"
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 19,
+		"fields": {
+			"category": "CM",
+			"price": "199.00",
+			"full_name": "Nikon Coolpix L340 Digital Camera",
+			"description": "The Nikon Coolpix L340 Digital Camera has a superb 28x optical zoom telephoto lens with Vibration Reduction (VR). It gets you closer to the action for sharp 20.2-megapixel photos and steady 720p HD videos. Let Scene Auto Selector do the work, or use the simple menu system to select one of 16 Scene Modes."
+		}
+	}, {
+		"model": "hello.product",
+		"pk": 20,
+		"fields": {
+			"category": "CM",
+			"price": "99.00",
+			"full_name": "Sony W800/S 20.1 MP Digital Camera (Silver)",
+			"description": "MP Super HAD CCD sensor for beautifully detailed images Sony Lens w/ 5x Optical Zoom Reduced blur with SteadyShot Image stabilization Capture your videos in 720p HD Movie mode Simplify camera menu with Easy Mode Take stunning images in Sweep Panorama mode-up to 360 Smile Shutter technology automatically captures smiles Creative shooting with Picture Effects Conveniently charge your battery via USB3 In camera guide helps navigate features"
+		}
+	}, {
+		"model": "hello.warehouse",
+		"pk": 1,
+		"fields": {
+			"address": "221B Baker Street"
+		}
+	}, {
+		"model": "hello.warehouse",
+		"pk": 2,
+		"fields": {
+			"address": "Wilhelminasingel 4293GG"
+		}
+	}, {
+		"model": "hello.warehouse",
+		"pk": 3,
+		"fields": {
+			"address": "Stationstraat 423042"
+		}
+	}, {
+		"model": "hello.warehouse",
+		"pk": 4,
+		"fields": {
+			"address": "Antilles Street, -15"
+		}
+	}, {
+		"model": "hello.supplier",
+		"pk": 1,
+		"fields": {
+			"name": "ThingSuppliers CO."
+		}
+	}, {
+		"model": "hello.supplier",
+		"pk": 2,
+		"fields": {
+			"name": "bol.com"
+		}
+	}, {
+		"model": "hello.supplier",
+		"pk": 3,
+		"fields": {
+			"name": "craigslist.com"
+		}
+	}, {
+		"model": "hello.supplier",
+		"pk": 4,
+		"fields": {
+			"name": "Red Dragon Production"
+		}
+	}, {
+		"model": "hello.supplier_contact",
+		"pk": 1,
+		"fields": {
+			"supplier": 1,
+			"phone_no": "+40212338987",
+			"address": "Kasteel Aldengoorstraat 2334HR",
+			"email": "get_things_cheap@myspace.com"
+		}
+	}, {
+		"model": "hello.supplier_contact",
+		"pk": 2,
+		"fields": {
+			"supplier": 2,
+			"phone_no": "+31615682777",
+			"address": "Kasteel Aldengoorstraat b 2334HR",
+			"email": "bol@puntcom.nl"
+		}
+	}, {
+		"model": "hello.supplier_contact",
+		"pk": 3,
+		"fields": {
+			"supplier": 3,
+			"phone_no": "+12345235223",
+			"address": "BuildWall Street 999c",
+			"email": "great@again.us"
+		}
+	}, {
+		"model": "hello.supplier_contact",
+		"pk": 4,
+		"fields": {
+			"supplier": 4,
+			"phone_no": "+86343299023",
+			"address": "1104 Eastern Harbour Centre 28Hoi Chak St. Quarry Bay",
+			"email": "xiaofu@baidu.cn"
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 1,
+		"fields": {
+			"name": "Rozanne Goes",
+			"email": "RozanneGoes@teleworm.us",
+			"hashed_password": "86caea00b6669dcd0514dab93f06df2a",
+			"address": "Korenbloem 192\n2211 MH  Noordwijkerhout",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 2,
+		"fields": {
+			"name": "Thanh Lam",
+			"email": "ThanhLam@dayrep.com",
+			"hashed_password": "cb954df323ab89545e7c6bf70fd76529",
+			"address": "Bernhardstraat 59\n4571 JS  Axel",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 3,
+		"fields": {
+			"name": "L\u00e1szl\u00f3 Wilders",
+			"email": "LaszloWilders@teleworm.us",
+			"hashed_password": "97d34daf738ae8494305dd25dba15411",
+			"address": "Lintveldebrink 58\n7544 KH  Enschede",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 4,
+		"fields": {
+			"name": "Christiane Limpens",
+			"email": "ChristianeLimpens@armyspy.com",
+			"hashed_password": "4ae9119efb4832c443ea9598d136311c",
+			"address": "Boschplaat 63\n1187 KW  Amstelveen",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 5,
+		"fields": {
+			"name": "Maher Blankenstein",
+			"email": "MaherBlankenstein@jourrapide.com",
+			"hashed_password": "cd3ab950a309adb61992e032c7ecd155",
+			"address": "Wilhelminalaan 70\n5691 AZ  Son",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 6,
+		"fields": {
+			"name": "Abderrahmane Schomaker",
+			"email": "AbderrahmaneSchomaker@armyspy.com",
+			"hashed_password": "79f464b949cbb6ada5bbb663be560728",
+			"address": "Belmermeer 130\n1151 ED  Broek in Waterland",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 7,
+		"fields": {
+			"name": "Sadik Deelen",
+			"email": "SadikDeelen@jourrapide.com",
+			"hashed_password": "4304b7a016fff99ff56b6dc52b585882",
+			"address": "Kouter 196\n4854 KS  Bavel",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 8,
+		"fields": {
+			"name": "Tahsin van der Vorst",
+			"email": "TahsinvanderVorst@jourrapide.com",
+			"hashed_password": "b1e770d8bac62535ec5df0ed36be94c0",
+			"address": "Keplerstraat 101\n4816 BD  Breda",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 9,
+		"fields": {
+			"name": "Peer van Aaken",
+			"email": "PeervanAaken@rhyta.com",
+			"hashed_password": "e2676243899a31ff7b088b7024256518",
+			"address": "Schilderinklaan 62\n7054 AE  Westendorp",
+			"history": []
+		}
+	}, {
+		"model": "hello.customer",
+		"pk": 10,
+		"fields": {
+			"name": "Simone van 't Veen",
+			"email": "SimonevantVeen@rhyta.com",
+			"hashed_password": "c7f04353ba49b8257043b27a7ebdfcd0",
+			"address": "Herengracht 90\n2312 LD  Leiden",
+			"history": []
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 1,
+		"fields": {
+			"product": 15,
+			"warehouse": 1,
+			"quantity": 124
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 2,
+		"fields": {
+			"product": 12,
+			"warehouse": 1,
+			"quantity": 110
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 3,
+		"fields": {
+			"product": 8,
+			"warehouse": 1,
+			"quantity": 13
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 4,
+		"fields": {
+			"product": 3,
+			"warehouse": 1,
+			"quantity": 4
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 5,
+		"fields": {
+			"product": 6,
+			"warehouse": 1,
+			"quantity": 123
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 6,
+		"fields": {
+			"product": 20,
+			"warehouse": 2,
+			"quantity": 330
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 7,
+		"fields": {
+			"product": 19,
+			"warehouse": 2,
+			"quantity": 76
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 8,
+		"fields": {
+			"product": 7,
+			"warehouse": 2,
+			"quantity": 44
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 9,
+		"fields": {
+			"product": 5,
+			"warehouse": 2,
+			"quantity": 90
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 10,
+		"fields": {
+			"product": 1,
+			"warehouse": 2,
+			"quantity": 102
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 11,
+		"fields": {
+			"product": 13,
+			"warehouse": 3,
+			"quantity": 36
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 12,
+		"fields": {
+			"product": 14,
+			"warehouse": 3,
+			"quantity": 14
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 13,
+		"fields": {
+			"product": 15,
+			"warehouse": 3,
+			"quantity": 20
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 14,
+		"fields": {
+			"product": 2,
+			"warehouse": 3,
+			"quantity": 187
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 15,
+		"fields": {
+			"product": 3,
+			"warehouse": 3,
+			"quantity": 40
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 16,
+		"fields": {
+			"product": 4,
+			"warehouse": 3,
+			"quantity": 59
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 17,
+		"fields": {
+			"product": 9,
+			"warehouse": 4,
+			"quantity": 71
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 18,
+		"fields": {
+			"product": 10,
+			"warehouse": 4,
+			"quantity": 444
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 19,
+		"fields": {
+			"product": 18,
+			"warehouse": 4,
+			"quantity": 7
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 20,
+		"fields": {
+			"product": 16,
+			"warehouse": 4,
+			"quantity": 160
+		}
+	}, {
+		"model": "hello.stock",
+		"pk": 21,
+		"fields": {
+			"product": 17,
+			"warehouse": 4,
+			"quantity": 360
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 1,
+		"fields": {
+			"product": 15,
+			"supplier": 1,
+			"quantity": 1245
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 2,
+		"fields": {
+			"product": 12,
+			"supplier": 1,
+			"quantity": 1103
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 3,
+		"fields": {
+			"product": 8,
+			"supplier": 1,
+			"quantity": 1333
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 4,
+		"fields": {
+			"product": 11,
+			"supplier": 1,
+			"quantity": 4020
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 5,
+		"fields": {
+			"product": 6,
+			"supplier": 1,
+			"quantity": 1231
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 6,
+		"fields": {
+			"product": 19,
+			"supplier": 2,
+			"quantity": 3303
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 7,
+		"fields": {
+			"product": 20,
+			"supplier": 2,
+			"quantity": 763
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 8,
+		"fields": {
+			"product": 7,
+			"supplier": 2,
+			"quantity": 4473
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 9,
+		"fields": {
+			"product": 5,
+			"supplier": 2,
+			"quantity": 906
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 10,
+		"fields": {
+			"product": 1,
+			"supplier": 2,
+			"quantity": 1029
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 11,
+		"fields": {
+			"product": 13,
+			"supplier": 3,
+			"quantity": 363
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 12,
+		"fields": {
+			"product": 14,
+			"supplier": 3,
+			"quantity": 147
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 13,
+		"fields": {
+			"product": 15,
+			"supplier": 3,
+			"quantity": 204
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 14,
+		"fields": {
+			"product": 2,
+			"supplier": 3,
+			"quantity": 1873
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 15,
+		"fields": {
+			"product": 11,
+			"supplier": 3,
+			"quantity": 406
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 16,
+		"fields": {
+			"product": 4,
+			"supplier": 3,
+			"quantity": 596
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 17,
+		"fields": {
+			"product": 9,
+			"supplier": 4,
+			"quantity": 71333
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 18,
+		"fields": {
+			"product": 1,
+			"supplier": 4,
+			"quantity": 4434
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 19,
+		"fields": {
+			"product": 18,
+			"supplier": 4,
+			"quantity": 72311
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 20,
+		"fields": {
+			"product": 16,
+			"supplier": 4,
+			"quantity": 16073
+		}
+	}, {
+		"model": "hello.supplier_stock",
+		"pk": 21,
+		"fields": {
+			"product": 17,
+			"supplier": 4,
+			"quantity": 36034
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 1,
+		"fields": {
+			"date": "2017-07-01",
+			"time": "00:34:00",
+			"customer": 1,
+			"order_status": "DV"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 2,
+		"fields": {
+			"date": "2017-06-07",
+			"time": "02:12:00",
+			"customer": 5,
+			"order_status": "DV"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 3,
+		"fields": {
+			"date": "2017-07-30",
+			"time": "03:19:00",
+			"customer": 10,
+			"order_status": "TS"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 4,
+		"fields": {
+			"date": "2017-08-03",
+			"time": "08:29:00",
+			"customer": 3,
+			"order_status": "PS"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 5,
+		"fields": {
+			"date": "2017-11-12",
+			"time": "10:46:00",
+			"customer": 1,
+			"order_status": "RJ"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 6,
+		"fields": {
+			"date": "2017-08-22",
+			"time": "11:24:00",
+			"customer": 6,
+			"order_status": "TS"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 7,
+		"fields": {
+			"date": "2017-08-28",
+			"time": "13:49:00",
+			"customer": 2,
+			"order_status": "TS"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 8,
+		"fields": {
+			"date": "2017-02-09",
+			"time": "19:29:00",
+			"customer": 4,
+			"order_status": "DV"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 9,
+		"fields": {
+			"date": "2017-09-21",
+			"time": "20:32:00",
+			"customer": 7,
+			"order_status": "PS"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 10,
+		"fields": {
+			"date": "2017-05-10",
+			"time": "22:53:00",
+			"customer": 8,
+			"order_status": "DV"
+		}
+	}, {
+		"model": "hello.sale",
+		"pk": 11,
+		"fields": {
+			"date": "2017-10-05",
+			"time": "11:53:00",
+			"customer": 9,
+			"order_status": "TS"
+		}
+	}
+]

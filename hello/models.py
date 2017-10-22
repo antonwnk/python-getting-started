@@ -41,31 +41,28 @@ class Warehouse(models.Model):
         return self.address
 
 
-class Supplier_Contact(models.Model):
-    phone_no = models.PositiveIntegerField(null=False, blank=False)
-    address = models.CharField(max_length=50, null=False, blank=False)
-    email = models.CharField(max_length=25, null=False, blank=False)
-
-    def __str__(self):
-        return 'Details for: ' + self.supplier.name
-
-    def __unicode__(self):
-        return 'Details for: ' + self.supplier.name
-
-
 class Supplier(models.Model):
-    name = models.CharField(primary_key=True, max_length=20)
-    contact_details = models.OneToOneField(
-        Supplier_Contact,
-        null=True,
-        on_delete=models.SET_NULL
-    )
+    supplierId = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=20)
 
     def __str__(self):
         return self.name
 
     def __unicode__(self):
         return self.name
+
+
+class Supplier_Contact(models.Model):
+    supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
+    phone_no = models.CharField(max_length=12, blank=False)
+    address = models.CharField(max_length=50, blank=False)
+    email = models.CharField(max_length=25, blank=False)
+
+    def __str__(self):
+        return 'Details for: ' + self.supplier.name
+
+    def __unicode__(self):
+        return 'Details for: ' + self.supplier.name
 
 
 class Customer(models.Model):
@@ -96,8 +93,8 @@ class Stock(models.Model):
 
 
 class Supplier_Stock(models.Model):
-    supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
     quantity = models.SmallIntegerField(default=0)
 
     def __str__(self):
@@ -122,8 +119,7 @@ class Sale(models.Model):
     saleId = models.AutoField(primary_key=True)
     date = models.DateField(default=datetime.date.today)
     time = models.TimeField(default=datetime.time.max)
-    customer = models.ForeignKey(Customer, on_delete=models.PROTECT, null=True)  # FIXME
-    items = models.ManyToManyField(Product, through='Order_Items')
+    customer = models.ForeignKey(Customer, on_delete=models.PROTECT)
     order_status = models.CharField(
         max_length=2,
         choices=ORDER_STATUS_CHOICES,

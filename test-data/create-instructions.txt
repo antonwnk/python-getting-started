@@ -1,0 +1,8 @@
+test-data/product.csv Product
+test-data/supplier.csv Supplier
+test-data/warehouse.csv Warehouse
+test-data/suppliercontact.csv Supplier_Contact
+test-data/customer.csv Customer
+test-data/stock.csv Stock
+test-data/supplierstock.csv Supplier_Stock
+test-data/sale.csv Sale

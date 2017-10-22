@@ -1,16 +1,29 @@
 {% extends "base.html" %}
 
+{% block title %}Data View{% endblock %}
+
 {% block content %}
+
   <div class="container">
+    <h2>Please choose what table you would like rendered.</h2>
+    <div class="form-group">
+      <form method="GET" action="/db">
 
+        <label for="tableSelect">Select table:</label>
+        <select class="form-control" id="tableSelect" name="table" required>
 
-<h2>Page View Report</h2>
+          {% for table_name in table_names %}
 
+            <option value="{{ table_name }}">{{ table_name }}</option>
 
-<ul>
+          {% endfor %}
 
-</ul>
+        </select>
+        <input type="submit" value="Query">
+      </form>
+    </div>
+  </div>
 
-</div>
+  {% block table_block %}{% endblock %}
 
 {% endblock %}
