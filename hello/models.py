@@ -20,7 +20,7 @@ class Product(models.Model):
     productId = models.AutoField(primary_key=True)
     category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
     price = models.DecimalField(decimal_places=2, max_digits=8)
-    full_name = models.CharField(max_length=50, blank=False, null=False)
+    full_name = models.CharField(max_length=500, blank=False, null=False)
     description = models.TextField(max_length=5000)
 
     def __str__(self):
