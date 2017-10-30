@@ -24,7 +24,7 @@ def run():
                     header = next(reader)
                     header = [clean(entry) for entry in header]
 
-                    def kwargs(values):
+                    def make_kwargs(values):
                         tuple = {}
 
                         assert len(values) == len(header), [header, file]
@@ -48,8 +48,9 @@ def run():
                         return tuple
 
                     for data_row in reader:
-                        instance = constructor(**kwargs(data_row))
-                        getattr(instance, 'save')()
+                        kwargs = make_kwargs(data_row)
+                        instance = constructor(**kwargs)
+                        instance.save()
             except Exception:
                 print(file)
                 print(entry)

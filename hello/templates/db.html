@@ -4,22 +4,21 @@
 
 {% block content %}
 
-  <div class="container">
+  <div class="jumbotron container">
     <h2>Please choose what table you would like rendered.</h2>
     <div class="form-group">
       <form method="GET" action="/db">
 
-        <label for="tableSelect">Select table:</label>
+        <label for="tableSelect">Select View:</label>
         <select class="form-control" id="tableSelect" name="table" required>
-
+          <option disabled selected value> -- select an option -- </option>
           {% for table_name in table_names %}
 
             <option value="{{ table_name }}">{{ table_name }}</option>
 
           {% endfor %}
-
         </select>
-        <input type="submit" value="Query">
+        <input class="btn-primary" type="submit" value="Query">
       </form>
     </div>
   </div>

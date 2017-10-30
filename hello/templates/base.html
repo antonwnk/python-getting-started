@@ -6,43 +6,82 @@
 <head>
   <title>Database Project &mdash; {% block title %}{% endblock %}</title>
   <link rel="shortcut icon" type="image/png" href="{% static "favicon.png" %}"/>
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <style type="text/css">
+    body, html {
+      margin: 0;
+      width: 100%;
+    }
+
+    html {
+      background: #6d6c51;
+    }
+
     .jumbotron {
-        background: #6c14fa;
-        color: white;
-        padding-bottom: 80px
+      background: #6d6c51;
+      color: white;
+      padding-bottom: 80px
     }
+
     .jumbotron .btn-primary {
-        background: #845ac7;
-        border-color: #845ac7
+      background: #845ac7;
+      border-color: #845ac7
     }
+
     .jumbotron .btn-primary:hover {
-        background: #7646c1
+      background: #7646c1
     }
+
     .jumbotron p {
-        color: #d9ccee;
-        max-width: 75%;
-        margin: 1em auto 2em
+      color: floralwhite;
+      max-width: 75%;
+      margin: 1em auto 2em
     }
-    .navbar+.jumbotron {
-        margin-top: -20px
+
+    .jumbotron.container {
+      margin: 0;
+      padding-top: 3%;
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 100%;
     }
+
+    .jumbotron.table {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+      color: #fffafa;
+      font-weight: bold;
+    }
+    
+    .jumbotron.table a {
+      color: #c3d2ff;
+      font-weight: bold;
+    }
+
+{#    .jumbotron + .table-container#}
+
+    .navbar + .jumbotron {
+      margin-top: -20px
+    }
+
     .jumbotron .lang-logo {
-        display: block;
-        background: #b01302;
-        transition: 0.75s;
-        border-radius: 50%;
-        overflow: hidden;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        border: 2px solid white
+      display: block;
+      background: #b01302;
+      transition: 0.75s;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border: 2px solid white
     }
+
     .jumbotron .lang-logo img {
-        max-width: 100%
+      max-width: 100%
     }
 
 
@@ -59,7 +98,8 @@
         <a href="/db"><span class="glyphicon glyphicon-hdd"></span> Go to the DB-View</a>
       </li>
       <li>
-        <a href="https://www.instagram.com/surfkostya/"><span class="glyphicon glyphicon-heart"></span> Visit our sponsor's Website</a>
+        <a href="https://www.maastrichtuniversity.nl/about-um/faculties/humanities-and-sciences/fhs-departments/department-data-science-and-knowledge-3"><span
+              class="glyphicon glyphicon-heart"></span> Visit our sponsor's Website</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

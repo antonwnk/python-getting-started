@@ -17,7 +17,7 @@ class Product(models.Model):
         (CAMERAS, 'Cameras')
     )
 
-    productId = models.AutoField(primary_key=True)
+    product_id = models.AutoField(primary_key=True)
     category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
     price = models.DecimalField(decimal_places=2, max_digits=8)
     full_name = models.CharField(max_length=500, blank=False, null=False)
@@ -31,7 +31,7 @@ class Product(models.Model):
 
 
 class Warehouse(models.Model):
-    warehouseId = models.AutoField(primary_key=True)
+    warehouse_id = models.AutoField(primary_key=True)
     address = models.TextField(max_length=120)
 
     def __str__(self):
@@ -42,7 +42,7 @@ class Warehouse(models.Model):
 
 
 class Supplier(models.Model):
-    supplierId = models.AutoField(primary_key=True)
+    supplier_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=500)
 
     def __str__(self):
@@ -66,18 +66,18 @@ class Supplier_Contact(models.Model):
 
 
 class Customer(models.Model):
-    customerId = models.AutoField(primary_key=True)
+    customer_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=500)
     email = models.EmailField()
     hashed_password = models.CharField(max_length=32)
     address = models.TextField(max_length=1000)
-    history = models.ManyToManyField(Product, db_table='hello_customer_history')
+    history = models.ManyToManyField(Product, through='Customer_History')
 
     def __str__(self):
-        return str(self.customerId)
+        return str(self.customer_id)
 
     def __unicode__(self):
-        return str(self.customerId)
+        return str(self.customer_id)
 
 
 class Stock(models.Model):
@@ -116,7 +116,7 @@ class Sale(models.Model):
         (REJECTED, 'Rejected')
     )
 
-    saleId = models.AutoField(primary_key=True)
+    sale_id = models.AutoField(primary_key=True)
     date = models.DateField(default=datetime.date.today)
     time = models.TimeField(default=datetime.time.max)
     customer = models.ForeignKey(Customer, on_delete=models.PROTECT)
@@ -143,3 +143,46 @@ class Order_Items(models.Model):
 
     def __unicode__(self):
         return 'Sale{} - product{} x {}'.format(self.sale, self.product, self.quantity)
+
+
+class Customer_History(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    customer = models.ForeignKey(Customer, on_delete=models.DO_NOTHING)
+    product = models.ForeignKey(Product, on_delete=models.DO_NOTHING)
+    product_category = models.CharField(max_length=2)
+    product_price = models.DecimalField(decimal_places=2, max_digits=8)
+    product_name = models.CharField(max_length=500)
+    product_description = models.TextField(max_length=5000)
+
+    class Meta:
+        managed = False
+        db_table = 'hello_customer_history_v'
+
+
+class Low_Stock(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    product = models.ForeignKey(Product, on_delete=models.DO_NOTHING)
+    stock = models.IntegerField()
+    supplierstock = models.IntegerField()
+    suppliername = models.CharField(max_length=500)
+    phone_no = models.CharField(max_length=12)
+    address = models.CharField(max_length=500)
+    email = models.EmailField()
+
+    class Meta:
+        managed = False
+        db_table = 'hello_low_stock'
+
+
+class Sales_by_Amount(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    sale = models.ForeignKey(Sale, on_delete=models.DO_NOTHING)
+    date = models.DateField()
+    time = models.TimeField()
+    order_status = models.CharField(max_length=2)
+    customer = models.ForeignKey(Customer, on_delete=models.DO_NOTHING)
+    total_amount = models.IntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'hello_sales_by_amount'
