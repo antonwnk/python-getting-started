@@ -1,3 +1,14 @@
+## Project for second year B.Sc. Databases course 
+Simple customization and deployment of the standard Heroku Django+PostgreSQL sample project.  
+Basic CRUD app (missing any Create, Update or Delete capabilities :sweat_smile:) to help get acquainted with Django.  
+
+Surprisingly, it's still live at https://niceproject.herokuapp.com/ on free Heroku dynos.  
+Thanks Heroku, way to go!
+
+---
+_Original README_
+
+
 # Python: Getting Started
 
 A barebones Django app, which can easily be deployed to Heroku.
